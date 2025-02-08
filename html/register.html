@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>register</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -21,7 +21,7 @@ align-items: center;
 
 
     <header class="flex">
-        <a class="logo" href="../html/index.html">
+        <a class="logo" href="../index.html">
             <i class="fa-solid fa-bag-shopping"></i>
             <span style="font-weight: bold" class="LG">LOGO</span>
             <p>shopping</p>
@@ -32,10 +32,10 @@ align-items: center;
                 $0.00
                 <samp class="products-number">2</samp>
             </a>
-            <a class="sign-in border" href="../html/sign.html">
+            <a class="sign-in" href="../html/sign.html">
                 <i class="fa-solid fa-right-to-bracket"></i>
                 sign-in</a>
-                <a class="register" href="../html/register.html">
+                <a class="register border" href="#">
                     <i class="fa-solid fa-person-circle-plus"></i>
                     register</a>
                 </div>               
@@ -44,10 +44,14 @@ align-items: center;
 
   <main class="px-3">
     <form style="text-align: left;">
-        
         <div class="mb-3">
-            <label for="Email-username" class="form-label">E-Mail / Ussrname</label>
-            <input type="email" class="form-control" id="Email-username1" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="mb-3">
+            <label for="exampleusername" class="form-label">Ussrname</label>
+            <input type="email" class="form-control" id="exampusername1" aria-describedby="emailHelp">
             
           </div>
         <div class="mb-3">
@@ -58,7 +62,7 @@ align-items: center;
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit" class="btn btn-primary">Sign In</button>
+        <button type="submit" class="btn btn-primary">Create Account</button>
       </form>
   </main>
 
