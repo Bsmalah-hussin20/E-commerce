@@ -1,0 +1,106 @@
+/* === colors === */
+:root{
+    --bodyBG: white;
+    --bodyFont: rgb(20, 19, 19);
+    --blue: #85baf7;
+    --icon: rgb(62, 119, 242);
+    --footer:gray;
+    --red:red;
+}
+body{
+    background-color: var(--bodyBG);
+    color: var(--bodyFont);
+}
+
+/* ===== General style ===== */
+.border{
+    border: 4px solid rgba(118, 59, 59, 0.523);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:system-ui, -apple-system;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*  بيرجع الاسكرول بشكل اسموز */
+}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+ /*=== scrollbar ===*/
+
+ /* تغيير شكل الشريط نفسه */
+::-webkit-scrollbar {
+   width: 4px; /* عرض الشريط */
+ }
+ 
+ /* تغيير شكل المسار الذي يتحرك عليه الشريط */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1; /* لون المسار */
+   border-radius: 10px; /* زوايا مستديرة */
+ }
+ 
+ /* تغيير شكل المقبض الذي يتم سحبه */
+ ::-webkit-scrollbar-thumb {
+   background: #888; /* لون المقبض */
+   border-radius: 10px; /* زوايا مستديرة */
+ }
+ 
+ /* تغيير لون المقبض عند التمرير عليه */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #555; /* لون المقبض عند التمرير */
+ }
+
+ /* html{ scrollbar-color: #e7e7e7 #7b8086; } */
+
+ a, button{
+    all: unset;  /* بنلغي كل التنسيقات بتاعتهم  */
+    display: inline-block;  /* العنصر يبقا مع بعضه في نفس السطر لو اكتر من كلمة */
+    transition: 0.3s;
+}
+
+ button:active, a:active{
+    scale: 0.9; /* لما نحط الماوس علي العنصر يغير الاسكل بتاعه */
+ }
+
+ button:hover, a:hover{
+    cursor: pointer; /* بنغير شكل الماوس */
+ }
+
+ button:disabled{
+  opacity: 0.7;
+  cursor: not-allowed;/* شكل الماوس */
+  scale: 1;
+ }
+
+ li{
+    list-style: none;
+ }
+
+
+/* =====
+for this task
+===== */
+ .fa-solid{
+    color: var(--icon);
+ }
+
+ main{
+   width: 80%;
+   margin-inline: auto;
+ }
+
+ @media (width < 600px ){
+   main{
+      width: 100%;
+      margin-inline: auto;
+    }
+ }

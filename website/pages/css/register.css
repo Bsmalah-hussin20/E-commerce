@@ -1,0 +1,10 @@
+header.flex{
+    & .fa-solid{
+        color: var(--bodyBG);
+    }
+}
+
+
+main.px-3{
+    max-width: 42rem;
+}

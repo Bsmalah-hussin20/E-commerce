@@ -1,0 +1,105 @@
+header{
+    background-color: var(--footer);
+    color: white;
+    padding-block: 0.6rem;
+
+
+    & .fa-solid{
+        color: rgb(16, 15, 17);
+    }
+
+    & .logo{
+        scale: 0.95;
+    }
+
+}
+
+section.cart article.flex{
+    background-color: rgb(252, 249, 249);
+    border-top: 3px solid var(--icon);
+    margin-top: 1.8rem;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-inline: auto;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px -1px rgba(54, 53, 53, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px
+        rgba(0, 0, 0, 0.12);
+        transition: 0.2s;
+    
+    & .fa-trash{
+        color: var(--red);
+        margin-left: 1rem;
+    }
+
+    & button.decrease,
+    & button.increase{
+        color: var(--blue);
+        font-size: 1.4rem;
+    }
+
+    & .quantaty{
+        background-color: var(--blue);
+        color: var(--bodyBG);
+        font-size: 0.8rem;
+        height: 21px;
+        width: 21px;
+        border-radius: 50%;
+        justify-content: center;
+        margin-inline: 0.4rem;
+    }
+
+}
+button.clear{
+   background-color: var(--red);
+   color: var(--bodyBG);
+   margin-top: 1rem;
+   border-radius: 4px;
+   padding: 6px 8px;
+   font-size: 0.8rem;
+
+   & .fa-trash-can{
+    color: var(--bodyBG);
+   }
+}
+
+section.summary{
+    background-color: var(--bodyBG);
+    box-shadow: 0px 2px 1px -1px rgba(54, 53, 53, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px
+        rgba(0, 0, 0, 0.12);
+        transition: 0.2s;
+    width: 250px;
+    margin-inline: auto;  /* في النص */
+    margin-top: 2.5rem;
+    border-radius: 5px;
+
+    & h1{
+        font-size: 1.2rem;
+        padding-block: 0.5rem;
+        border-bottom: 2px solid black;
+    }
+
+    & div.flex{
+        padding-inline: 0.5;
+        margin-block: 0.6rem;
+        margin-inline: 0.4rem;
+        justify-content: space-between;
+    }
+
+    & button.checkout {
+        width: 100%;
+        background-color: var(--blue);
+        color: var(--bodyBG);
+        padding-block: 0.6rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    & a{
+        padding-block: 0.5rem;
+        color: var(--red);
+        font-size: 0.9rem;
+    }
+}

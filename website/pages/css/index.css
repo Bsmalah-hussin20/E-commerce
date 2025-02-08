@@ -1,0 +1,114 @@
+div.top-img{
+    position: relative;
+    height: 100vh;
+    background-image: url(../Images/bac.jpg);
+    background-position: center; /* لما بتصغر الشاشة الصورة متتقصش */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (width < 1000px ){
+    div.top-img {
+        background-position: right; 
+    }
+}
+
+section.content{
+    font-size: 2rem;
+    position: absolute;
+    background-color: rgba(169, 169, 169, 0.423);
+    padding: 0.6rem 1.6rem;
+
+    /* عشان تبقا في النص بالظبط */
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin-left: 10%;
+   
+    & .men{
+        margin-block: 0.5rem;
+    }
+
+    & .sale{
+        margin-block: 0.5rem;
+    }
+
+    & .free-shipping{
+        font-size: 1.5rem;
+    }
+
+    & button{
+        background-color: black;
+        color: azure;
+        margin-block: 0.5rem;
+        font-size: 1rem;
+        padding: 0.6rem 1.6rem;
+        border-radius: 55px;
+    }
+}
+
+main section.products.flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 1.4rem;
+
+    & article.card{
+        border-radius: 5px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px
+        rgba(0, 0, 0, 0.12);
+        transition: 0.2s;
+    }
+
+    & article.card:hover{
+        scale: 1.01;
+    }
+
+    & img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    & .card .content{
+        background-color: #fff;
+        border-radius: 5px 5px 0 0;
+        padding-inline: 0.4rem;
+    }
+
+    & .card .content .title{
+        padding-top: 0.4rem;
+    }
+
+    & .card .content .description{
+        font-size: 0.8rem;
+        margin: 0.4rem 0;
+    }
+
+    & .card .content .price{
+        font-size: 0.9rem;
+        color: red;
+        font-weight: bold;
+        margin-bottom: 0.6rem;
+    }
+
+    & .card .content button{
+        background-color: black;
+        color: #fff;
+        padding-block: 0.4rem;
+        padding-inline: 0.4rem;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        margin-bottom: 2%;
+    }
+
+    & .card .content .fa-solid .add-to-cart{
+        color: var(--icon);
+    }
+
+}
+@media (width < 600px ){
+    main h1.recommended {
+       margin: 2.3rem 0 2rem 0 ;
+       font-size: 1.4rem;
+     }
+  }

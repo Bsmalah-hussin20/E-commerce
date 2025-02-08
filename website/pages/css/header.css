@@ -1,0 +1,114 @@
+header.flex{
+    justify-content: space-between;
+    padding-inline: 10%; /* مسافة من الجمبين */
+    padding-top: 1.2rem;
+
+    & .sign-in{
+        margin-inline: 1rem;
+    }
+
+    & .fa-solid{
+        margin-right: 0.3rem;
+    }
+
+    
+    & .fa-bag-shopping{
+        font-size: 1.5rem;
+    }
+
+    & .sign-in,
+    & .register {
+        border: 1px solid var(--bodyFont);
+        padding: 0.44rem 1rem;
+        border-radius: 55px;
+
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    &.cart:hover{
+        border: 1px solid var(--blue);
+        padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+    }
+
+    & .sign-in:hover,
+    & .register:hover,
+    & .sign-in:hover .fa-solid,
+    & .register:hover .fa-solid 
+    {
+        background: var(--bodyFont);
+        color: var(--blue);
+    }
+
+    & .cart{
+        background-color: var(--bodyFont);
+        color: var(--blue);
+        font-size: 0.9rem;
+        padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+        border-radius: 55px;
+    }
+
+    & .cart .fa-solid{
+        color: var(--blue);
+    }
+
+    & .products-number{
+        position: absolute;
+        background-color: red;
+        height: 20px;
+        width: 20px;
+        color: #fff;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        right: 0;
+        top: -6px;
+        font-family: 0.7rem;
+        font-weight: bold;
+    }
+
+    
+}
+
+
+@media (width < 600px){
+    
+    .logo .fa-solid,
+    .logo p{
+        display: none;  /* اللوجو بيختفي في الويدز الاقل من 600 */
+    }
+    
+    .logo .LG{
+        margin-right: 1rem;
+    }
+    header.flex{
+        justify-content: center;
+        padding-inline: 0.1rem;
+
+        .links{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem; /* المسافة الرأسية بينهم */
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    
+}
+
+.scroll-down{
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: var(--footer);
+    color: var(bodyBG);
+    z-index: 11;
+
+    & .fa-solid{
+        color: white;
+    }
+}
