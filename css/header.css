@@ -74,7 +74,7 @@ header.flex{
 }
 
 
-@media (width < 600px){
+@media only screen and (max-width: 576px){
 
     
     .logo .fa-solid,
@@ -114,20 +114,8 @@ header.flex{
     
 } 
 
-.scroll-down{
-    position: fixed;
-    right: 0;
-    left: 0;
-    background-color: var(--footer);
-    color: var(bodyBG);
-    z-index: 11;
 
-    & .fa-solid{
-        color: white;
-    }
-}
-
-@media (width < 400px){
+@media only screen and (max-width: 400px){
 
     
     header.flex{
@@ -156,3 +144,48 @@ header.flex{
 
     
 } 
+
+
+@media only screen and (max-width: 320px){
+
+    
+    header.flex{
+        justify-content: center;
+        padding-inline: 0.1rem;
+        
+        .links{
+            display: flex;
+            flex-wrap: wrap;
+            
+        & .fa-solid{
+            display: none;
+        }     
+        }
+        
+        & .sign-in,
+        & .register {
+        border: 1px solid var(--bodyFont);
+        text-align: center;
+        border-radius: 55px;
+
+        font-size: 0.rem;
+        font-weight: 500;
+    }
+    }
+
+    
+} 
+
+
+.scroll-down{
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: var(--footer);
+    color: var(bodyBG);
+    z-index: 11;
+
+    & .fa-solid{
+        color: white;
+    }
+}
