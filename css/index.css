@@ -10,7 +10,7 @@ div.top-img{
 
 @media (width < 1000px ){
     div.top-img {
-        background-position: right; 
+        background-position: left; 
     }
 }
 
@@ -107,8 +107,13 @@ main section.products.flex{
 
 }
 @media (width < 600px ){
-    main h1.recommended {
-       margin: 2.3rem 0 2rem 0 ;
-       font-size: 1.4rem;
-     }
+    
+    section.content{
+        font-size: 1.5rem;
+        position: absolute;
+        background-color: rgba(169, 169, 169, 0.423);
+        padding: 0.2rem 0.6rem;
+        margin-left: 0%;
+    }
+    
   }

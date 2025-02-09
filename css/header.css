@@ -75,30 +75,44 @@ header.flex{
 
 
 @media (width < 600px){
+
     
     .logo .fa-solid,
     .logo p{
         display: none;  /* اللوجو بيختفي في الويدز الاقل من 600 */
     }
     
-    .logo .LG{
-        margin-right: 1rem;
+     .logo .LG{
+        margin-right: 3rem;
+        
     }
     header.flex{
         justify-content: center;
         padding-inline: 0.1rem;
-
+        
         .links{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem; /* المسافة الرأسية بينهم */
-            margin-bottom: 0.5rem;
+            gap: 0.6rem; /* المسافة الرأسية بينهم */
+             margin-bottom: 0.5rem;
+
+             
         }
+        
+        & .sign-in,
+        & .register {
+        border: 1px solid var(--bodyFont);
+        padding: 0.4rem 0.4rem;
+        border-radius: 55px;
+
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
     }
 
     
-}
+} 
 
 .scroll-down{
     position: fixed;
@@ -112,3 +126,33 @@ header.flex{
         color: white;
     }
 }
+
+@media (width < 400px){
+
+    
+    header.flex{
+        justify-content: center;
+        padding-inline: 0.1rem;
+        
+        .links{
+            display: flex;
+            flex-wrap: wrap;
+            
+        & .fa-solid{
+            display: none;
+        }     
+        }
+        
+        & .sign-in,
+        & .register {
+        border: 1px solid var(--bodyFont);
+        padding: 0.4rem 0.4rem;
+        border-radius: 55px;
+
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    }
+
+    
+} 
